@@ -8,10 +8,9 @@ export const SearchBar = () => {
         <SearchBarWrapper> 
             <input className='inputSearch' placeholder='Enter keywords...' type="text" />
             <button type='submit' className='searchIcon'>
-                <BiSearchAlt2 size={24}/>
+                <BiSearchAlt2 size={20}/>
             </button>
         </SearchBarWrapper>
     </> 
-
     )
 }

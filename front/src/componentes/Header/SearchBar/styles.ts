@@ -4,19 +4,21 @@ import { theme } from "../../../styles/theme";
 
 export const SearchBarWrapper = styled.form`
     display: flex;
-    width: 60%;
-    min-width: 200px;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 1 500px; 
+    min-width: 0px;
+
     .inputSearch {
         width: 100%;
-        padding: .6rem 1rem;
+        padding: 0.5rem 1.5rem;
         
         border-top: 1px solid ${theme.background.color.border};
         border-bottom: 1px solid ${theme.background.color.border};
         border-left: 1px solid ${theme.background.color.border};
         border-right: 1px solid ${theme.background.color.border};
 
-        border-radius: 4px 0px 0px 4px;
-
+        border-radius: 20px 0px 0px 20px;
         transition: .1s;
     }
 
@@ -34,20 +36,13 @@ export const SearchBarWrapper = styled.form`
     .searchIcon {
         display: flex;
         align-items: center;
-        width: 15%;
-        min-width: 50px;
+        padding: 0.5rem 1.5rem;
 
-        padding: .3rem 1rem;
-
-        border-radius: 0px 8px 8px 0px;
+        border-radius: 0px 20px 20px 0px;
         border: 1px solid ${theme.background.color.border};
         border-left: none;
-
         
         cursor: pointer;
         outline: none;
-
-        display: flex;
-        justify-content: center;
     }
 `
