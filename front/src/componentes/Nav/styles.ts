@@ -12,37 +12,36 @@ export const NavWrapper = styled.nav`
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 1rem 0;
     border-right: 1px solid ${theme.background.color.border};
+    padding: 1rem .8rem;
 
     .ulNav {
         display: flex;
         flex-direction: column;
 
         width: 100%;
-        margin: 1rem auto 0 auto;
-        gap: .5rem;
+        margin: 0 auto 0 auto;
     }
 
     .navOption {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: .7rem;
-
-        width: 80%;
-        margin: auto;
+        gap: 1rem;
+        width: 100%;
 
         padding: .5rem .7rem;
-        transition: .5s;
-        border-radius: 50px;
+        transition: .1s;
+        border-radius: 10px;
     } 
 
     .navOption:hover {
-        background-color: rgba(128, 128, 128, 0.5);
+        background-color: rgba(128, 128, 128, 0.3);
     } 
     .navOption > p {
-        font-size: .85rem;
+        font-size: .8rem;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: ${theme.font.weight.reegular};
     }
 
     .navOption > * {
@@ -52,6 +51,40 @@ export const NavWrapper = styled.nav`
     .iconOption {
         display: flex;
         align-items: center;
+        width: 22px;
+    }
+
+    .line {
+        background-color: #B3DBDB;
+        width: 100%;
+        height: 1px;
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .filterStyle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+
+        padding: .5rem .7rem;
+        transition: .1s;
+        border-radius: 10px;
+        cursor: pointer;
+        border-block: 1px solid #B3DBDB;
+        margin-block: 1rem;
+    }
+
+    .filterStyle > .iconOption:hover {
+        border-radius: 50px;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .filterStyle > p {
+        font-size: .8rem;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: ${theme.font.weight.reegular};
     }
 
     .profile {
