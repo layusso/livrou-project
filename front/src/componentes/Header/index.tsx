@@ -1,21 +1,26 @@
 import { HeaderWrapper } from './styles'
 import { SearchBar } from './SearchBar'
 import livrouLogo from '/images/livrouLogo.svg' 
-
-import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineEllipsis } from 'react-icons/ai'
+import adeliaIcon from '/images/adelia.png'
 
 export const Header = () => {
   return (
     <HeaderWrapper>
       <div className='HeaderContainer'>
-        <div className='imgSearchWrapper'>
           <div className='menuImgWrapper'>
-            <AiOutlineMenu size={22}/>
             <img src={livrouLogo} className='livrouLogo' alt="livro" />
           </div>
+
+
           <SearchBar/>
-        </div>
+
+          <div className='profile'>
+            <img className='profileImg' src={adeliaIcon} alt="adelia" />
+            <AiOutlineEllipsis/>
+          </div>
       </div>
-    </HeaderWrapper> 
+      
+    </HeaderWrapper>  
   )
 }

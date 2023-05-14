@@ -1,19 +1,12 @@
 import { styled } from "styled-components";
 import { theme } from "../../styles/theme";
 
-
-
-
 export const NavWrapper = styled.nav`
     flex-basis: 200px;
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    border-right: 1px solid ${theme.background.color.border};
-    padding: 1rem .8rem;
 
     .ulNav {
         display: flex;
@@ -21,6 +14,7 @@ export const NavWrapper = styled.nav`
 
         width: 100%;
         margin: 0 auto 0 auto;
+        padding: 1rem 0rem;
     }
 
     .navOption {
@@ -30,7 +24,7 @@ export const NavWrapper = styled.nav`
         gap: 1rem;
         width: 100%;
 
-        padding: .5rem .7rem;
+        padding: .5rem 1.4rem;
         transition: .1s;
         border-radius: 10px;
     } 
@@ -40,7 +34,6 @@ export const NavWrapper = styled.nav`
     } 
     .navOption > p {
         font-size: .8rem;
-        font-family: 'Roboto Mono', monospace;
         font-weight: ${theme.font.weight.reegular};
     }
 
@@ -83,34 +76,21 @@ export const NavWrapper = styled.nav`
 
     .filterStyle > p {
         font-size: .8rem;
-        font-family: 'Roboto Mono', monospace;
         font-weight: ${theme.font.weight.reegular};
     }
 
-    .profile {
+    .filterOption {
         display: flex;
-        gap: 1rem;
+        justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
 
-        width: 165px;
-        padding: .3rem .5rem;
+        padding: .7rem 1.4rem;
+        font-size: .9rem;
 
-        transition: .2s;
-    }
-
-    .profile:hover {
-        background-color: rgba(128, 128, 128, 0.5);
-        border-radius: 50px;
-    }
-
-    .profile > * {
+        border-block: 1px solid #d3d3d3;
         cursor: pointer;
+
     }
 
-    .profile > p {
-        font-size: .8rem;
-        font-weight: ${theme.font.weight.medium};
-    }
 `
 
