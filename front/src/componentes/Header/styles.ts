@@ -6,6 +6,10 @@ export const HeaderWrapper = styled.header`
     display: block;
     border-bottom: 1px solid #d3d3d3;
 
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 1;
+
     .HeaderContainer {
         height: 56px;
         display: flex;
