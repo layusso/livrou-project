@@ -2,11 +2,16 @@ import { styled } from "styled-components";
 import { theme } from "../../styles/theme";
 
 export const NavWrapper = styled.nav`
-    flex-basis: 200px;
+    width: 200px;
     height: 100%;
 
     display: flex;
     flex-direction: column;
+    border-right: 1px solid #d3d3d3;
+
+
+    background-color: #FFFFFF;
+    position: fixed;
 
     .ulNav {
         display: flex;
