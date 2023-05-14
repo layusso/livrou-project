@@ -11,16 +11,18 @@ function App() {
 
   return (
     <div className='app'>
-    <ThemeProvider theme={theme}>
-    <div>
-      <Header/>
-    </div>
-    <main className='main'>
-      <Nav/>
-      <Outlet/>
-    </main>
-    </ThemeProvider>
-    <GlobalStyle/>
+      <ThemeProvider theme={theme}>
+        <div>
+          <Header/>
+        </div>
+        <div className='main'>
+          <Nav/>
+          <div className='mainContent'>
+            <Outlet/>
+          </div>
+        </div>
+      </ThemeProvider>
+      <GlobalStyle/>
     </div>
   )
 }
