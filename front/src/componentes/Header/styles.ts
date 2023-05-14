@@ -3,28 +3,28 @@ import { theme } from "../../styles/theme";
 
 export const HeaderWrapper = styled.header`
     width: 100%;
-    border-bottom: 1px solid ${theme.background.color.border};
+    display: block;
+    border-bottom: 1px solid #d3d3d3;
 
     .HeaderContainer {
-        display: block;
-        max-width: 1000px;
-    }
-
-    .imgSearchWrapper {
         height: 56px;
-        padding: 0 16px;
-
         display: flex;
         flex-direction: row;
-        align-items: center;
+
         justify-content: space-between;
-        gap: 3rem;
+        align-items: center;
+
+        padding-inline: 2rem;
+        gap: 1rem;
     }
 
     .menuImgWrapper {
+        min-width: 70px;
         display: flex;
-        align-items: center;
-        gap: .5rem;
+    }
+
+    .menuImgWrapper > img {
+        width: 100%;
     }
 
     .menuImgWrapper > * {
@@ -33,5 +33,27 @@ export const HeaderWrapper = styled.header`
 
     .livrouLogo {
         max-width: 100px;
+    }
+
+    .profile {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        padding: .3rem .5rem;
+
+        transition: .2s;
+    }
+
+    .profileImg {
+        width: 35px;
+    }
+
+    .profile > * {
+        cursor: pointer;
+    }
+
+    .profile > p {
+        font-size: .8rem;
+        font-weight: ${theme.font.weight.medium};
     }
 `
