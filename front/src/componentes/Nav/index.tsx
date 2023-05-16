@@ -30,7 +30,7 @@ export const Nav = () => {
 
         
           <div className='filterOption'>
-            <p>Filtrar</p>
+            <p>Filtrar Anúncios</p>
             <div className='iconOption'>
               <MdKeyboardArrowDown size={24}/>
             </div>

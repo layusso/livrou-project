@@ -9,7 +9,7 @@ export const SearchBarWrapper = styled.form`
 
     .inputSearch {
         width: 100%;
-        padding: 0.5rem 1.5rem;
+        padding: 0.6rem 1.5rem;
         
         border-top: 1px solid #d3d3d3;
         border-bottom: 1px solid #d3d3d3;
